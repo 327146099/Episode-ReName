@@ -133,7 +133,7 @@ else:
         '--name_format',
         required=False,
         help='(慎用) 自定义重命名格式, 参数需要加引号 默认为 "S{season}E{ep}" 可以选择性加入 系列名称如 "{series} - S{season}E{ep}" ',
-        default='S{season}E{ep}',
+        default='{series} - S{season}E{ep}',
     )
     ap.add_argument(
         '--name_format_bypass', required=False, help='(慎用) 自定义重命名格式, 对满足格式的文件忽略重命名步骤', default=0
